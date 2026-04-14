@@ -49,7 +49,8 @@ float pibPercapita2;
 
 
   // Área para entrada de dados
-
+  
+ 
 
 
   // Área para exibição dos dados da cidade
@@ -137,5 +138,31 @@ printf("Pontos Turisticos: %d\n",pontoTuristicos2);
 printf("Densidade Populacional: %.2f\n",densidadePopulacional2);
 printf("PIB Percapita: %.2f\n",pibPercapita2);
 
+ //Super poder da carta 1//
+ float superpoder2;
+ float superpoder1;
+
+superpoder1 = (float)populacao1 + pib1 + area1 + pontoTuristicos1 + pibPercapita1 + (1.0 / densidadePopulacional1);
+
+//SUPER PODER DA CARTA 2//
+superpoder2 = (float)populacao2 + pib2 + area2 + pontoTuristicos2 + pibPercapita2 + (1.0 / densidadePopulacional2);
+
+
+
+printf("População: Carta %d, venceu (%d)\n",(populacao1 > populacao2 ? 1 : 2), (populacao1 > populacao2));
+
+printf(" PIB : Carta %d venceu (%d)\n",(pib1 > pib2 ? 1 : 2),(pib1 > pib2));
+
+printf(" Area: Carta %d venceu (%d)\n" ,(area1 > area2 ? 1 : 2),(area1 > area2));
+
+printf("Pontos Turisticos: Carta: %d venceu (%d)\n",(pontoTuristicos1 > pontoTuristicos2 ? 1 : 2), (pontoTuristicos1 > pontoTuristicos2));
+
+printf("PIB Percapita: Carta %d venceu (%d)\n",(pibPercapita1 > pibPercapita2 ? 1 : 2),(pibPercapita1 > pibPercapita2));
+
+printf("Densidade Populacional: Carta: %d venceu: (%d)\n",(densidadePopulacional1 < densidadePopulacional2 ? 1 : 2), (densidadePopulacional1 < densidadePopulacional2));
+printf("\n\n=====SuperPoder : Carta %d venceu: (%d)======\n\n",(superpoder1 > superpoder2 ? 1 : 2),(superpoder1 > superpoder2));
+
+
     return 0;
+    
 }
