@@ -124,10 +124,8 @@ printf("Area: %f\n",area1);
 printf("PIB: %f\n",pib1);
 printf("Pontos Turisticos: %d\n",pontoTuristicos1);
 printf("Densidade Populacional: %.2f\n",densidadePopulacional1);
-printf("PIB Percapita: %.2f\n",pibPercapita1);
-
-
-printf("  ==== CARTA 2 ==== ");
+printf("PIB Percapita: %.2f\n",pibPerc
+printf("\n\n  ==== CARTA 2 ====\n\n ");
 printf("Estado: %c\n",estado2);
 printf("Cidade: %d\n",cidade2);
 printf("População: %d\n",populacao2);
