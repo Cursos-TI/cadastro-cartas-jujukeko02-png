@@ -49,7 +49,8 @@ float pibPercapita2;
 
 
   // Área para entrada de dados
-
+  
+ 
 
 
   // Área para exibição dos dados da cidade
@@ -137,5 +138,32 @@ printf("Pontos Turisticos: %d\n",pontoTuristicos2);
 printf("Densidade Populacional: %.2f\n",densidadePopulacional2);
 printf("PIB Percapita: %.2f\n",pibPercapita2);
 
+ 
+//Eu escolhi o atributo Populacao//
+
+printf(" \n\n=====Comparação de cartas (Atributo: População):====="  );
+
+printf("Carta 1: \n Cidade: %d - Populacão: %d",cidade1, populacao1);
+printf(" Carta2: \n Cidade:%d - População: %d",cidade2, populacao2);
+
+if (populacao1 > populacao2) {
+  
+  printf("\nResultado: Carta 1 (Cidade %d) venceu!\n", cidade1);
+  
+}
+
+else if (populacao2 > populacao1) {
+  
+  
+  printf("\nResultado: Carta 2 (Cidade %d) venceu!\n", cidade2);
+  
+  
+}
+
+else {
+  printf("\nDeu empate ");
+}
+
     return 0;
+    
 }
